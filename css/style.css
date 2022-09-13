@@ -1,0 +1,859 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  /* ---css index y base-- */
+.grilla {
+    width: 100vw;
+    height: 150vh;
+    background-color: rgb(16, 15, 15);
+    display: grid;
+    grid-template-rows: .5fr 1fr 1fr .5fr;
+    grid-template-columns: .5fr 1fr 1fr .5fr;
+    grid-template-areas: "nav header header header"
+        "nav main main main"
+        "nav main main main"
+        "nav footer footer footer";
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+
+
+
+header {
+    background-image: url(../assets/images/wickerman.jpg);
+    grid-area: header
+}
+
+       /* -- CSS MAIN INDEX-- */
+
+
+.main-index {
+    background-color: rgb(24, 7, 7);
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "sec1 sec1 aside aside"
+        "sec2 sec2 aside aside";
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+.aside-index {
+    background-color: cornflowerblue;
+    grid-area: aside;
+    display: flex;
+
+}
+
+.container-aside {
+    flex-wrap: wrap;
+
+}
+
+.container-aside img {
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+
+#seccion_1 {
+    background-color: rgb(24, 27, 233);
+    grid-area: sec1;
+
+}
+
+
+
+
+#seccion_2 {
+    background-color: burlywood;
+    grid-area: sec2;
+    overflow-x: auto
+}
+
+        /* --footer css-- */
+
+footer {
+    background-image: url(../assets/images/wickerman.jpg);
+
+    grid-area: footer;
+
+}
+.estilo-footer {
+    color: rgb(5, 10, 10);
+    font-family: "texto-paratodos";
+    font-size: 1rem;
+    text-align: justify;
+    height: 1;
+    padding: 5px, dotted, black;
+    width: 100%;
+    margin-left: 10px;
+    ;
+    padding-right: 40px;
+
+}
+
+.estilo-footer ul li a {
+    text-decoration: none;
+    color: black;
+    size: 1rem;
+    font-family: "texto-paratodos";
+    font-size: larger;
+
+}
+
+
+
+/* -----NAV CSS---------- */
+
+
+.nav-index {
+    background-color: rgb(130, 126, 133);
+    grid-area: nav;
+    display: grid;
+    display: flex;
+    ;
+
+}
+
+.nav-index h1 {
+    margin-top: 1.5rem;
+    font-size: 2em;
+    margin-bottom: 1rem;
+
+}
+
+.logo {
+    height: 50%;
+    width: 50%;
+    float: left;
+    margin-left: 40px;
+    margin-bottom: 20px;
+
+}
+
+.logo-imagen img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%
+}
+
+.logo div {
+    margin-bottom: 20px;
+
+}
+
+.container-flex {
+    height: 100%;
+
+    font-size: 0.5rem;
+    justify-content: space-evenly;
+    flex-basis: 100%;
+    justify-items: column;
+  
+    align-items: left;
+   
+
+
+}
+
+.container-flex ul {
+    text-align: left;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.container-flex ul li a {
+    display: inline-block;
+    background-color: rgb(237, 232, 232);
+    font-family: "shadow";
+    padding: 10px 5px 1px 1px;
+    margin-top: 10px;
+
+    border-radius: 15px;
+
+    ;
+    font-size: 1em;
+    justify-items: column;
+    flex-wrap: wrap;
+    align-items: left;
+}
+
+ul li a {
+    text-decoration: none,  !important;
+    color: black;
+    size: 6px;
+    font-family: "shadow";
+    align-items: left
+}
+
+
+.estilo-titulo1 {
+    font-family: "shadow";
+    font-size: 2.5em;
+    text-align: center;
+
+}
+
+.que-es-el-terror {
+    Font-family: 'Franklin Gothic Medium',
+        'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 20px;
+
+}
+
+.estilo-texto {
+    color: rgb(5, 10, 10);
+    font-family: "texto-paratodos";
+    
+    font-size: 1.5rem;
+    text-align: justify;
+    height: 1.6;
+    padding: 5px, dotted, black;
+    width: 100%;
+    margin-left: 10px;
+    ;
+    padding-right: 40px;
+    ;
+    margin-top: 5px;
+}
+
+@font-face {
+    font-family: "shadow";
+    src: url(../assets/fonts/Shadow\ of\ the\ Deads.ttf);
+}
+
+@font-face {
+    font-family: "texto-paratodos";
+    src: url(../assets/fonts/SmallMemory.ttf);
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+
+
+/* --CSS AVANCES--- */
+.grilla-avances {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(20, 27, 21);
+    display: grid;
+    grid-template-rows: .5fr 2fr 2fr .5fr;
+    grid-template-columns: .5fr 1fr 1fr .5fr;
+    grid-template-areas: "nav header header header"
+        "nav main main main"
+        "nav main main main"
+        "nav footer footer footer";
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+
+
+.main-avances {
+    background-color: rgb(34, 33, 33);
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "sec1av sec1av aside aside"
+        "sec2av sec2av aside aside";
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    border-top: rgb(14, 13, 13) solid 10px;
+    
+}
+
+.aside-avances {
+    background-color: cornflowerblue;
+    grid-area: aside;
+    display: flex;
+
+}
+
+
+
+
+
+.span-1 {
+    flex-wrap: wrap;
+    background-color: rgb(21, 29, 26);
+    width: 100%;
+    border: 10px solid black;
+    justify-content: space-between;
+
+}
+
+
+
+
+#seccion_1_avances {
+    background-color: rgb(144, 75, 19);
+    grid-area: sec1av;display: flex;
+
+}
+
+
+#seccion_2_avances {
+    background-color: burlywood;
+    grid-area: sec2av;
+    display: flex
+}
+
+.trailer {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+    width: 90%;
+    padding-left: 10%;
+   ;
+
+
+
+}
+
+.trailer iframe {
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+}
+
+h3 {
+    font-family: "shadow";
+    font-size: 1rem;
+    flex-wrap: wrap;
+
+}
+
+
+
+.jeepers-trailer {
+    background-color: blueviolet;
+    border: solid 10px black;
+    height: 50%;
+    font-family: "texto-paratodos";
+
+    font-size: 1.5rem;
+    text-align: center;
+    height: 1.6;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+.halloween-trailer {
+    background-color: rgb(59, 212, 31);
+    border: solid 10px black;
+    height: 50%;
+    font-family: "texto-paratodos";
+
+    font-size: 1.5rem;
+    text-align: center;
+    height: 1.6;
+    flex-wrap: wrap
+}
+
+/* MEDIA QUERIE  DESKTROP FIRST */
+
+@media only screen and (max-width: 1400px) and (min-width: 1023px) {
+
+    .jeepers-trailer {
+        background-color: blueviolet;
+        border: solid 10px black;
+        height: 50%;
+        font-family: "texto-paratodos";
+
+        font-size: 1.2rem;
+        text-align: center;
+        height: 1.6;
+        flex-wrap: wrap;
+
+    }
+
+
+
+
+    .halloween-trailer {
+        background-color: rgb(59, 212, 31);
+        border: solid 10px black;
+        height: 50%;
+        font-family: "texto-paratodos";
+
+        font-size: 1rem;
+        text-align: center;
+        height: 1.6;
+        flex-wrap: wrap
+    }
+
+
+    h3 {
+        font-family: "texto-paratodos";
+        font-size: 1rem;
+        flex-wrap: wrap;
+
+
+
+    }
+
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+
+
+    /* ---INDEX---      */
+
+    .grilla {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(16, 15, 15);
+        display: grid;
+        grid-template-rows: .5fr 1fr 1fr .5fr;
+        grid-template-columns: 0.25fr 1fr 1fr 0.25fr;
+        grid-template-areas: "nav header header header"
+            "nav main main main"
+            "nav main main main"
+            "nav footer footer footer";
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+
+    .main-index {
+        background-color: rgb(9, 3, 3);
+        grid-area: main;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "sec1 sec1 sec1 sec1"
+            "sec2 sec2 sec2 sec2";
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        border-top: rgb(14, 13, 13) solid 10px;
+        
+    }
+
+    .aside-index {
+        display: none
+    }
+
+    .estilo-texto {
+        color: rgb(5, 10, 10);
+        font-family: "texto-paratodos";
+        font-size: 1.2rem;
+        text-align: justify;
+        height: 1.6;
+        padding: 5px, dotted, black;
+        width: 100%;
+        margin-left: 10px;
+        ;
+        padding-right: 40px;
+        ;
+        margin-top: 5px;
+    }
+
+    .estilo-titulo1 {
+        font-family: "shadow";
+        font-size: 1.5em;
+        text-align: center;
+
+    }
+
+    .que-es-el-terror {
+        Font-family: 'Franklin Gothic Medium',
+            'Arial Narrow', Arial, sans-serif;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 20px;
+
+    }
+
+    .estilo-footer {
+        color: rgb(5, 10, 10);
+        font-family: "texto-paratodos";
+        font-size: 0.8em;
+        text-align: justify;
+        height: 10vh;
+        padding: 5px, dotted, black;
+        width: 100%;
+        margin-left: 10px;
+        ;
+        padding-right: 40px;
+
+    }
+
+    .estilo-footer ul li a {
+        text-decoration: none;
+        color: black;
+        size: 1rem;
+        font-family: "texto-paratodos";
+        font-size: larger;
+
+    }
+
+    /* --AVANCES-- */
+    .jeepers-trailer {
+        background-color: blueviolet;
+        border: solid 10px black;
+        height: 50%;
+        font-family: "texto-paratodos";
+
+        font-size: 1rem;
+        text-align: center;
+        height: 1.6;
+        flex-wrap: wrap;
+
+    }
+
+
+
+
+    .halloween-trailer {
+        background-color: rgb(59, 212, 31);
+        border: solid 10px black;
+        height: 50%;
+        font-family: "texto-paratodos";
+
+        font-size: .8rem;
+        text-align: center;
+        height: 1.6;
+        flex-wrap: wrap
+    }
+
+
+    h3 {
+        font-family: "texto-paratodos";
+        font-size: 1rem;
+        flex-wrap: wrap;
+
+
+
+    }
+
+
+    .grilla-avances {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(20, 27, 21);
+        display: grid;
+        grid-template-rows: .5fr 1fr 1fr .5fr;
+        grid-template-columns: .5fr 1fr 1fr .5fr;
+        grid-template-areas: "nav header header header"
+            "nav main main main"
+            "nav main main main"
+            "nav footer footer footer";
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 480px) and (max-width:768px) {
+    .grilla {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(16, 15, 15);
+        display: grid;
+        grid-template-rows: .5fr 1fr 1fr .5fr;
+        grid-template-columns: 0.25fr 1fr 1fr 0.25fr;
+        grid-template-areas: "header header header header"
+            "nav main main main"
+            "main main main main"
+            "main footer footer footer";
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+
+    .main-index {
+        background-color: rgb(6, 5, 5);
+        grid-area: main;
+        display: grid;
+        grid-template-rows: 2fr 2fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "sec1 sec1 sec1 sec1"
+            "sec2 sec2 sec2 sec2";
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        border-top: rgb(14, 13, 13) solid 10px;
+
+    }
+
+    .aside-index {
+        display: none
+    }
+
+    .estilo-texto {
+        color: rgb(5, 10, 10);
+        font-family: "texto-paratodos";
+
+        font-size: 1rem;
+        text-align: justify;
+        height: 1.6;
+        padding: 5px, dotted, black;
+        width: 100%;
+        margin-left: 10px;
+        ;
+        padding-right: 40px;
+        ;
+        margin-top: 5px;
+    }
+
+    .estilo-titulo1 {
+        font-family: "shadow";
+        font-size: 1.2rem;
+        text-align: center;
+
+    }
+
+    .que-es-el-terror {
+        Font-family: 'Franklin Gothic Medium',
+            'Arial Narrow', Arial, sans-serif;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 20px;
+
+    }
+
+    .estilo-footer {
+        color: rgb(5, 10, 10);
+        font-family: "texto-paratodos";
+        font-size: 0.8em;
+        text-align: justify;
+        height: 10vh;
+        padding: 5px, dotted, black;
+        width: 100%;
+        margin-left: 10px;
+        ;
+        padding-right: 40px;
+
+    }
+
+    .estilo-footer ul li a {
+        text-decoration: none;
+        color: black;
+        size: 1rem;
+        font-family: "texto-paratodos";
+        font-size: larger;
+
+    }
+    #seccion_1 {
+        background-color: rgb(24, 27, 233);
+        grid-area: sec1;
+        overflow-y: auto;
+    
+    }
+
+    /* ---Avances--- */
+    .jeepers-trailer {
+        background-color: blueviolet;
+        border: solid 10px black;
+        height: 50%;
+        font-family: "texto-paratodos";
+
+        font-size: .7rem;
+        text-align: center;
+        height: 1.6;
+        flex-wrap: wrap;
+        overflow-y: auto;
+    }
+
+
+
+
+    .halloween-trailer {
+        background-color: rgb(59, 212, 31);
+        border: solid 10px black;
+        height: 50%;
+        font-family: "texto-paratodos";
+
+        font-size: .7rem;
+        text-align: center;
+        height: 1.6;
+        flex-wrap: wrap;
+        overflow-y: auto;
+
+
+    }
+
+
+    h3 {
+        font-family: "texto-paratodos";
+        font-size: 1rem;
+        flex-wrap: wrap;
+
+
+
+
+    }
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    .grilla {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(16, 15, 15);
+        display: grid;
+        grid-template-rows: .2fr 1fr 1fr .2fr;
+        grid-template-columns: .2fr 1fr 1fr 1fr;
+        grid-template-areas: "nav header header header"
+            "nav main main main"
+            "nav main main main"
+            "nav footer footer footer";
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+
+
+
+    .main-index {
+        background-color: rgb(16, 5, 5);
+        grid-area: main;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "sec1 sec1 sec1 sec1"
+            "sec2 sec2 sec2 sec2";
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        border-top: rgb(14, 13, 13) solid 10px;
+        
+    }
+
+    .aside-index {
+        display: none
+    }
+
+    .estilo-texto {
+        color: rgb(5, 10, 10);
+        font-family: "texto-paratodos";
+        
+        font-size: .8rem;
+        text-align: justify;
+        height: 1.2;
+        padding: 5px, dotted, black;
+        width: 100%;
+        margin-left: 10px;
+        ;
+        padding-right: 40px;
+        ;
+        margin-top: 5px;
+    }
+
+    .estilo-titulo1 {
+        font-family: "shadow";
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .que-es-el-terror {
+        Font-family: 'Franklin Gothic Medium',
+            'Arial Narrow', Arial, sans-serif;
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: underline;
+        margin-top: 20px;
+
+    }
+
+    .estilo-footer {
+        color: rgb(5, 10, 10);
+        font-family: "texto-paratodos";
+        font-size: 0.5em;
+        text-align: justify;
+        height: 10vh;
+        padding: 5px, dotted, black;
+        width: 100%;
+        margin-left: 10px;
+        ;
+        padding-right: 40px;
+
+    }
+
+    .estilo-footer ul li a {
+        text-decoration: none;
+        color: black;
+        size: px;
+        font-family: "texto-paratodos";
+        font-size: .8rem;
+
+    }
+
+    /* ---Avances--- */
+    .jeepers-trailer {
+        background-color: blueviolet;
+        border: solid 10px black;
+        height: 50%;
+        font-family: "texto-paratodos";
+
+        font-size: .7rem;
+        text-align: justify;
+        height: 1.2;
+        flex-wrap: wrap;
+        overflow-y: auto;
+        padding: 0 2px 0 2px;
+
+    }
+
+
+
+
+    .halloween-trailer {
+        background-color: rgb(59, 212, 31);
+        border: solid 10px black;
+        height: 50%;
+        font-family: "texto-paratodos";
+
+        font-size: .7rem;
+        text-align: justify;
+
+        height: 1.2;
+        flex-wrap: wrap;
+        overflow-y: auto;
+        padding: 0 2px 0 2px
+    }
+
+
+    h3 {
+        font-family: "texto-paratodos";
+        font-size: .9rem;
+        flex-wrap: wrap;
+
+
+
+    }
+
+}
